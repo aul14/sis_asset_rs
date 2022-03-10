@@ -1,0 +1,9 @@
+{
+    "require": {
+        "chillerlan/php-qrcode": "^3.4.1",
+        "mpdf/mpdf": "^8.0",
+        "php": ">=5.3.7",
+        "phpoffice/phpspreadsheet": "^1.19",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}

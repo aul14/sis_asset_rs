@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="../../dist/css/select2.css">
+<style type="text/css">
+.selectRow {
+    display : block;
+    padding : 20px;
+}
+.select2-container {
+    width: 200px;
+}
+</style>
+<body>Remote Data Example:
+    <div class="selectRow">
+        <!-- Using data-placeholder below to set place holder value. -->
+        <input type="hidden" id="remoteDataExample" name='input' />
+    </div>
+</body>
+<script src="../../../AdminLTE-2.0.5/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+<script src="../../dist/js/select2.js"></script>
+
+<script type="text/javascript">
+$(document).ready(
+
+function () {
+    var searchTerm = null;
+    // Remote data example
+    var remoteDataConfig = {
+        placeholder: "Search for an option...",
+        minimumInputLength: 3,
+        ajax: {
+            url: '/echo/json/',
+            dataType: 'json',
+            data: function (term, page) {
+                // Nothing sent to server side. Mock example setup.
+                searchTerm = term.toUpperCase();
+            },
+            results: function (data, page) {
+                // Normally server side logic would parse your JSON string from your data returned above then return results here that match your search term. In this case just returning 2 mock options.
+                return {
+                    results: getMockData()
+                };
+            }
+        },
+        formatResult: function (option) {
+            return "<div>" + option.desc + "</div>";
+        },
+        formatSelection: function (option) {
+            return option.desc;
+        }
+    };
+
+    function getMockData() {
+        var mockData = [{
+            id: 1,
+            desc: 'Option 1'
+        }, {
+            id: 1,
+            desc: 'Option 2'
+        }];
+        var foundOptions = [];
+
+        for (var key in mockData) {
+            if (mockData[key].desc.toUpperCase().indexOf(searchTerm) >= 0) {
+                foundOptions.push(mockData[key]);
+            }
+        }
+
+        return foundOptions;
+    };
+
+    $("#remoteDataExample").select2(remoteDataConfig);
+});
+</script>

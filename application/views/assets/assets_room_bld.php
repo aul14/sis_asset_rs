@@ -1,0 +1,1 @@
+<script src="<?= base_url(); ?>vue-components/assets/js/bld/assets_room_bld.js"></script>

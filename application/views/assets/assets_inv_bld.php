@@ -1,0 +1,1 @@
+<script src="<?= base_url(); ?>vue-components/assets/js/bld/assets_inv_bld.js"></script>

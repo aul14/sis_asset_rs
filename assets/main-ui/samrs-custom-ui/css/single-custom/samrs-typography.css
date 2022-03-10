@@ -1,0 +1,140 @@
+.text-samrs-primary,
+[samrs-typography*="primary"]
+{
+  color: var(--samrs-blue)!important;
+}
+.text-samrs-success,
+[samrs-typography*="success"]
+{
+  color: var(--samrs-success)!important;
+}
+.text-samrs-info,
+[samrs-typography*="info"]
+{
+  color: var(--samrs-info)!important;
+}
+.text-samrs-warning,
+[samrs-typography*="warning"]
+{
+  color: var(--samrs-warning)!important;
+}
+.text-samrs-danger,
+[samrs-typography*="danger"]
+{
+  color: var(--samrs-danger)!important;
+}
+.text-samrs-dark,
+[samrs-typography*="dark"]
+{
+  color: var(--natural-dark)!important;
+}
+.text-sm,
+[samrs-typography*="small-text"]
+{
+  font-size: 11px;
+}
+.text-capitalize,
+[samrs-typography*="capitalize"]
+{
+  text-transform: capitalize!important;
+}
+.text-uppercase,
+[samrs-typography*="uppercase"]
+{
+  text-transform: uppercase!important;
+}
+.text-lowercase,
+[samrs-typography*="lowercase"]
+{
+  text-transform: lowercase!important;
+}
+.clear-transform,
+[samrs-typography*="clear-transform"]
+{
+  text-transform: none!important;
+}
+.text-900,
+[samrs-typography*="900"]
+{
+  font-weight: 900!important;
+}
+.text-800,
+[samrs-typography*="800"]
+{
+  font-weight: 800!important;
+}
+.text-700,
+[samrs-typography*="700"]
+{
+  font-weight: 700!important;
+}
+.text-600,
+[samrs-typography*="600"]
+{
+  font-weight: 600!important;
+}
+.text-500,
+[samrs-typography*="500"]
+{
+  font-weight: 500!important;
+}
+.text-400,
+[samrs-typography*="400"]
+{
+  font-weight: 400!important;
+}
+.text-300,
+[samrs-typography*="300"]
+{
+  font-weight: 300!important;
+}
+.text-200,
+[samrs-typography*="200"]
+{
+  font-weight: 200!important;
+}
+.text-400,
+[samrs-typography*="100"]
+{
+  font-weight: 100!important;
+}
+.text-bolder,
+[samrs-typography*="bolder"]
+{
+  font-weight: bolder!important;
+}
+.text-lighter,
+[samrs-typography*="lighter"]
+{
+  font-weight: lighter!important;
+}
+.text-bold,
+[samrs-typography*="bold"]
+{
+  font-weight: bold!important;
+}
+.text-normal,
+[samrs-typography*="normal"]
+{
+  font-weight: normal!important;
+}
+.text-center,
+[samrs-typography*="center"]
+{
+  text-align: center!important;
+}
+.text-left,
+[samrs-typography*="left"]
+{
+  text-align: left!important;
+}
+.text-right,
+[samrs-typography*="right"]
+{
+  text-align: right!important;
+}
+.text-justify,
+[samrs-typography*="justify"]
+{
+  text-align: justify!important;
+}

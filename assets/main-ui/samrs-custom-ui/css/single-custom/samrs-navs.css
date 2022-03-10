@@ -1,0 +1,102 @@
+/* a:hover, a:focus{
+  color: #2c3052!important;
+} */
+/* [data-sidebarbg="skin5"] .sidebar-nav ul .sidebar-item .first-level .sidebar-item,
+[data-sidebarbg="skin5"] .sidebar-nav ul .sidebar-item .second-level .sidebar-item,
+[data-sidebarbg="skin5"] .sidebar-nav ul .sidebar-item .third-level .sidebar-item
+ {
+  background: #4ab8e8;
+} */
+[data-sidebarbg="skin5"] .sidebar-nav ul .first-level .sidebar-item .sidebar-link i,
+[data-sidebarbg="skin5"] .sidebar-nav ul .second-level .sidebar-item .sidebar-link i,
+[data-sidebarbg="skin5"] .sidebar-nav ul .third-level .sidebar-item .sidebar-link i
+{
+  color:#fbfdff;
+}
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link i,
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .second-level .sidebar-item .sidebar-link i,
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .third-level .sidebar-item .sidebar-link i
+{
+    /* font-size: 12px; */
+    visibility: visible;
+}
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link span,
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .second-level .sidebar-item .sidebar-link span,
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .third-level .sidebar-item .sidebar-link span
+ {
+    /* font-size: 12px; */
+    font-weight: 400;
+}
+[data-sidebartype='mini-sidebar'] .left-sidebar:hover .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link i,
+[data-sidebartype='mini-sidebar'] .left-sidebar:hover .sidebar-nav ul .sidebar-item .second-level .sidebar-item .sidebar-link i,
+[data-sidebartype='mini-sidebar'] .left-sidebar:hover .sidebar-nav ul .sidebar-item .third-level .sidebar-item .sidebar-link i
+{
+    visibility: visible!important;
+}
+[data-sidebartype='full'] .sidebar-nav ul .sidebar-item .sidebar-link{
+  /* padding: 17px 13px 5px 5px!important; */
+  padding: 15px 13px 15px 5px!important;
+}
+[data-sidebartype='mini-sidebar'] .sidebar-nav ul .sidebar-item .sidebar-link{
+  padding: 17px 13px 5px 10px!important;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link i{
+  font-size: 13px!important;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link span{
+  font-size: 13px!important;
+  opacity: 0.4!important;
+}
+[data-sidebartype='mini-sidebar'] .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link,
+[data-sidebartype='mini-sidebar'] .sidebar-nav ul .sidebar-item .second-level .sidebar-item .sidebar-link,
+[data-sidebartype='mini-sidebar'] .sidebar-nav ul .sidebar-item .second-level .sidebar-item .sidebar-link
+{
+  padding: 5px 2px 10px 10px!important;
+}
+[data-sidebartype='full'] .left-sidebar .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link,
+[data-sidebartype='mini-sidebar'] .left-sidebar:hover ul .sidebar-item .first-level .sidebar-item .sidebar-link
+{
+  padding: 15px 2px 5px 20px!important;
+}
+[data-sidebartype='full'] .left-sidebar .sidebar-nav ul .sidebar-item .second-level .sidebar-item .sidebar-link,
+[data-sidebartype='mini-sidebar'] .left-sidebar:hover ul .sidebar-item .second-level .sidebar-item .sidebar-link
+{
+  padding: 15px 2px 5px 40px!important;
+}
+[data-sidebartype='full'] .left-sidebar .sidebar-nav ul .sidebar-item .third-level .sidebar-item .sidebar-link,
+[data-sidebartype='mini-sidebar'] .left-sidebar:hover ul .sidebar-item .third-level .sidebar-item .sidebar-link
+{
+  padding: 15px 2px 5px 60px!important;
+}
+/* .sidebar-nav ul .sidebar-item .sidebar-link:hover i, */
+.sidebar-nav ul .sidebar-item .sidebar-link:hover span{
+  opacity: 1!important;
+  transition: all .2s ease-in-out;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link:hover{
+    background-color: rgba(244,244,244,.2);
+}
+.sidebar-nav ul .sidebar-item.selected > .sidebar-link
+{
+  background-color:#c14055;
+}
+.sidebar-nav ul .sidebar-item.selected .sidebar-link span{
+  opacity: 1!important;
+}
+/* .first-level .sidebar-item.active>.sidebar-link,
+.second-level .sidebar-item.active>.sidebar-link,
+.third-level .sidebar-item.active>.sidebar-link{
+  font-weight: 600;
+  background-color: rgba(244,244,244,.2);
+} */
+.first-level .sidebar-item.active >.sidebar-link,
+.second-level .sidebar-item.active >.sidebar-link,
+.third-level .sidebar-item.active >.sidebar-link{
+  background-color: rgba(244,244,244,.2);
+}
+.first-level .sidebar-item .sidebar-link.active span,
+.second-level .sidebar-item .sidebar-link.active span,
+.third-level .sidebar-item .sidebar-link.active span{
+  font-weight: 700;
+  opacity: 1!important;
+}

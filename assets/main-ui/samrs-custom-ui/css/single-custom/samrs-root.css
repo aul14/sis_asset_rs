@@ -1,0 +1,21 @@
+:root {
+  --pure-white: #ffffff;
+  --pure-dark:#000;
+  --natural-dark:#1e1e21;
+  --natural-white:#fefefe;
+  --samrs-primary: #2cabe3;
+  --samrs-blue:#0080ff;
+  --samrs-success: #47d147;
+  --samrs-info: #33ccff;
+  --samrs-warning: #ff9c00;
+  --samrs-danger: #ff3333;
+  --samrs-light: #c4c4c4;
+  --samrs-gray:#e9f0f3;
+  --samrs-gold:#ffd700;
+  --is-disabled:#a1a8a2;
+  --perfect-shadow:5px 4px 6px 0px rgba(173,173,173,0.5);
+  --almost-perfect-shadow:5px 5px 2px 0px rgba(160,160,160,0.7);
+  --samrs-rubik:"Rubik", sans-serif;
+  --samrs-roboto:"Roboto", sans-serif;
+  --samrs-sintony:"Sintony", sans-serif;
+}

@@ -1,0 +1,611 @@
+/* samrs loader */
+.loader {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    z-index: 2000;
+  }
+
+  .loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid var(--samrs-blue);
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: var(--samrs-blue) transparent transparent transparent;
+  }
+  .loader.small div{
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    border: 4px solid var(--samrs-blue);
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: var(--samrs-blue) transparent transparent transparent;
+  }
+  .loader div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .loader div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .loader div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/* /samrs loader */
+/* samrs ribbon */
+.samrs-ribbon {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+  }
+.samrs-ribbon .ribbon{
+    font: bold 9px sans-serif;
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    position: relative;
+    padding: 7px 0;
+    top: 10px;
+    left: -40px;
+    width: 120px;
+}
+/* /samrs ribbon */
+/* samrs detail box */
+.hospital-info{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hospital-info .hospital-logo img{
+  display: block;
+  width: 100%;
+  max-width: 70px;
+  height: auto;
+  margin: 0 auto;
+}
+.hospital-info .hospital-name p{
+  color: var(--pure-dark);
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-bottom: 2px solid var(--samrs-light);
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.hospital-info .hospital-address p{
+  color: var(--pure-dark);
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+  .samrs-detail-box{
+    padding: 2px 10px 10px;
+    border: 1px solid #cccccc;
+  }
+  .samrs-detail-box.red{
+   border: 1px solid #c14055!important;
+  }
+  .samrs-detail-box.blue{
+   border: 1px solid var(--samrs-primary)!important;
+  }
+  .samrs-detail-box .detail-title{
+    text-transform: capitalize;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    font-weight: 600;
+    color: #090d11;
+    bottom: 0;
+    background: var(--pure-white);
+  }
+/* '/samrs detail box */
+/* samrs list group */
+.samrs-list{
+  display: flex;
+  flex-direction:column;
+  padding-left: 0;
+  padding-right: 0;
+}
+.samrs-list.row{
+  flex-direction: row!important;
+}
+.samrs-list li,
+.samrs-list a.list-item
+{
+  list-style: none;
+  margin: 2px 0;
+  padding: 3px 2px;
+}
+.samrs-list.with-border-bottom li,
+.samrs-list.with-border-bottom a.list-item
+{
+  border-bottom: 1px solid #c1c1c1;
+}
+.samrs-list.with-border li,
+.samrs-list.with-border a.list-item
+{
+  border: 1px solid #c1c1c1;
+}
+.samrs-list a{
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--natural-dark);
+}
+.samrs-list a:hover{
+  color: var(--samrs-primary)!important;
+}
+.samrs-list a .badge{
+  font-size: 14px;
+  padding: 5px!important;
+  white-space: nowrap;
+}
+.samrs-list.more-space li,
+.samrs-list.more-space a.list-item
+{
+  padding: 8px 5px!important;
+}
+.samrs-list.with-rounded li,
+.samrs-list.with-rounded a.list-item,
+.samrs-list.with-rounded .badge
+{
+  border-radius: 3px;
+}
+/* /samrs list group */
+/* samrs-hospital-list */
+.hospital-list-box{
+  display: flex;
+  flex-direction:row;
+  text-decoration:none;
+}
+.hospital-list-box .hospital-logo{
+  width: auto;
+  height: 90px;
+  margin: 0 20px 0 30px;
+}
+.hospital-list-box .hospital-list-info{
+  padding: 0 10px;
+}
+.hospital-list-info p{
+  margin-bottom: 2px;
+}
+.hospital-list-info .hospital-list-name{
+  font-size: 22px;
+  font-weight: 900;
+}
+.hospital-list-info .hospital-list-phone{
+  font-size: 12px;
+  font-weight: 200;
+  font-style: italic;
+}
+.hospital-list-info .hospital-list-location{
+  font-size: 14px;
+  font-weight: 400;
+}
+.hospital-list-box .hospital-list-action{
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+/* /samrs-hospital-list */
+/* samrs-contact */
+.samrs-contact-box{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  .samrs-contact-box .contact-icon{
+    margin-right: 10px;
+  }
+  .samrs-contact-box .contact-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .samrs-contact-box .contact-info .contact-name{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--natural-dark);
+    margin-bottom: 0;
+    word-wrap: break-word;
+  }
+  .samrs-contact-box .contact-info  .contact-company{
+    font-size: 10px;
+    font-weight: 500;
+    font-style: italic;
+    color:#0f0a0a;
+    word-wrap: break-word;
+    margin-bottom: 0;
+  }
+  .samrs-contact-box .contact-action{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 10;
+  }
+  .contact-action .btn{
+    font-size: 10px;
+    padding: 3px 5px!important;
+  }
+  .samrs-contact-box .contact-info .contact-phone{
+    font-size: 12px;
+    color: #1d1d1d;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .contact-phone span{
+    font-weight: normal;
+  }
+  .samrs-contact-box .contact-info .contact-type{
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 2px;
+  }
+  .contact-icon .avatar-circle  {
+    width: 50px;
+    height: 50px;
+    padding: 4px 5px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--samrs-primary);
+    color: var(--pure-white);
+    font-size: 30px;
+    border: 1px solid #c3c3c3;
+  }
+  .char_name{
+    line-height: 0.5;
+  }
+  ol.list-view{
+    list-style: none;
+    padding: 10px 0;
+  }
+  ol.list-view li{
+    background: var(--samrs-primary);
+    color: var(--pure-white);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  ul.list-view{
+    list-style: none;
+    padding: 10px 0;
+  }
+/* samrs-contact */
+/* samrs collapse */
+div.samrs-overlay{
+  font-size: 11px;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 5px;
+  background: rgba( 255, 255, 255, 0.50 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9.0px );
+  -webkit-backdrop-filter: blur( 9.0px );
+  border-radius: 4px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  visibility: hidden;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.samrs-overlay.off{
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.samrs-overlay.on{
+  height:auto;
+  min-height: 100px;
+  max-height: 380px;
+  opacity: 100%;
+  visibility: visible;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.samrs-overlay .header {
+  margin: 2px 5px;
+}
+.samrs-overlay .content{
+  padding: 2px 4px;
+}
+.samrs-overlay .footer {
+  padding: 2px 5px;
+  background: unset!important;
+}
+.samrs-overlay .form-control{
+  height: 30px;
+  font-size: 12px;
+  width: 130px;
+}
+.samrs-overlay .form-control[type="month"]{
+  width: 170px!important;
+}
+.samrs-overlay .header .close-div{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  float: right;
+}
+.samrs-overlay .header .close-div .close-btn{
+  width: 22px;
+  height: 23px;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: bold;
+  padding: 1px;
+  border-radius: 4px;
+}
+.samrs-overlay .header .title p{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card.samrs-collapse{
+    border-radius: 2px;
+    margin-bottom: 6px;
+  }
+.card.samrs-collapse .card-header p{
+  color: #d6d6d6;
+  padding: 0 6px;
+  float: left;
+  margin: 0;
+  text-transform: uppercase;
+}
+.card.samrs-collapse .card-header .arrows{
+  color: #d6d6d6;
+  padding: 5px 0;
+  float: right;
+}
+.card.samrs-collapse[data-border] .card-header{
+  border: unset;
+}
+.card.samrs-collapse[data-border] .card-header .arrows{
+  color: #ffffff;
+}
+.card.samrs-collapse[data-border="primary"] .card-header{
+  background-color:var(--samrs-blue);
+  color: var(--pure-white);
+}
+.card.samrs-collapse[data-border="info"] .card-header{
+  background-color:var(--samrs-info);
+  color: var(--pure-white);
+}
+.card.samrs-collapse[data-border="success"] .card-header{
+  background-color:var(--samrs-success);
+  color: var(--pure-white);
+}
+.card.samrs-collapse[data-border="warning"] .card-header{
+  background-color:var(--samrs-warning);
+  color: var(--pure-white);
+}
+.card.samrs-collapse[data-border="danger"] .card-header{
+  background-color:var(--samrs-danger);
+  color: var(--pure-white);
+}
+.card.samrs-collapse[data-border="dark"] .card-header{
+  background-color:var(--natural-dark);
+  color: var(--pure-white);
+}
+.card.samrs-collapse[data-border="light"] .card-header{
+  background-color:var(--samrs-light);
+  color: var(--natural-dark);
+}
+@media only screen and (min-width:1500px){
+  .samrs-overlay .form-control{
+    width: 185px!important;
+  }
+}
+/* /samrs collapse */
+/* samrs signature card */
+.signature-card{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 15px;
+}
+.signature-card .signature-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25px 0 10px;
+}
+.signature-box .signature-action{
+  align-items: baseline;
+  text-align: center;
+}
+.signature-box .signature-title{
+  align-items: flex-start;
+  text-align: center;
+}
+.signature-box .signature-draw{
+  align-items: center;
+  padding-top: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signature-box .signature-draw img{
+  width: 190px;
+  height: 150px;
+}
+.signature-box .signature-name{
+  border-top: 2px solid #0c0c0d;
+  align-items: flex-end;
+}
+div.drawing-box{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dashed var(--natural-dark);
+  width: 350px;
+  height: 300px;
+  display: block!important;
+}
+/* /samrs signature card */
+/* samrs arrows */
+.arrows {
+    transform: scale(1.6);
+    margin-left: 8px;
+    margin-top: -4px;
+    transition: all 0.3s ease;
+}
+.arrows.left{
+	float:right;
+	color:#112aa3;
+	margin-top:5px;
+}
+a[aria-expanded='false'] .arrows {
+    transform: scale(1.6) rotate(-180deg);
+    transition: all 0.3s ease;
+}
+div[aria-expanded='false'] .arrows {
+    transform: scale(1.6) rotate(-180deg);
+}
+/* samrs arrows */
+/* samrs floating card */
+.float-wrapper{
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.float-wrapper .float-card{
+  background: var(--samrs-primary);
+  width: 140px;
+  height: 180px;
+  max-height: 200px;
+  padding: 10px;
+  position: relative;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: var(--perfect-shadow);
+}
+.float-card::-webkit-scrollbar{
+  width: 5px!important;
+}
+.float-card.in{
+  right: 20px;
+  transition: right 0.3s ease;
+}
+.float-card.out{
+  right: -200px;
+  transition: all 0.3s ease;
+}
+.float-card .float-title{
+  color: var(--pure-white);
+  font-weight: bold;
+}
+.float-card .float-title p{
+  border-bottom: 2px solid var(--pure-white);
+}
+.float-card a.shortcut-link{
+  color: var(--pure-white);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.float-card a.shortcut-link:hover,
+.float-card a.shortcut-link:focus{
+  color: var(--samrs-gray);
+}
+.float-wrapper .float-toggle{
+  background: var(--samrs-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 25px;
+  right: -85px;
+  border: 1px solid var(--pure-white);
+  box-shadow: var(--perfect-shadow);
+}
+.float-toggle a{
+  position: relative;
+  right: -12px;
+  top: -5px;
+  font-size: 32px;
+  color: var(--pure-white);
+}
+.float-toggle a i[rotate="active"]{
+  transition: all 0.3s ease;
+}
+.float-toggle a i[rotate="hide"]{
+  transform: rotate(-180deg);
+  transition: all 0.3s ease;
+}
+/* /samrs floating card */
+/* samrs stars */
+.star-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.star-wrap.md-star label.star-label{
+  font-size: 2rem!important;
+}
+.star-wrap.sm-star label.star-label{
+  font-size: 1.2rem!important;
+}
+.star-wrap label.star-label{
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 3rem
+}
+label.star-label .star-icon{
+  pointer-events: none;
+}
+.star-wrap input[type="radio"].input-star{
+  position: relative;
+  opacity: 0;
+}
+.star-wrap input[type="radio"].input-star.none{
+  display: none;
+}
+.star-wrap .star-icon{
+  color: var(--samrs-gold);
+  transition: all 0.3s;
+}
+.star-wrap .input-star:checked ~ label.star-label .star-icon{
+  color: var(--samrs-light);
+  transition: all 0.3s;
+}
+.star-wrap:hover label.star-label .star-icon{
+  color: var(--samrs-gold);
+  transition: all 0.3s;
+}
+.star-wrap input[type="radio"].input-star:hover ~ label.star-label .star-icon{
+  color:var(--samrs-light);
+  transition: all 0.3s;
+}
+/* /samrs stars */

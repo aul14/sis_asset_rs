@@ -1,0 +1,1 @@
+<script src="<?= base_url(); ?>vue-components/assets/js/med/assets.js"></script>

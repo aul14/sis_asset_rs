@@ -1,0 +1,64 @@
+.owl-carousel .samrs-slider{
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 60px;
+}
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.owl-carousel .owl-prev:not(.disabled){
+    opacity: 1;
+    visibility: visible;
+    /* transition: all 0.2s ease-in-out; */
+}
+.owl-carousel .owl-prev:not(.disabled)>.prev-slide{
+  animation:bounceInLeft;
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-next:not(.disabled){
+  opacity: 1;
+  visibility: visible;
+  /* transition: all 0.2s ease-in-out; */
+}
+.owl-carousel .owl-next:not(.disabled)>.next-slide{
+  animation:bounceInRight;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .samrs-slider.prev-slide {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--samrs-blue);
+    left: 5px;
+}
+.owl-carousel .samrs-slider.next-slide {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--samrs-blue);
+    right: 15px;
+}
+  /* .samrs-owl-stage{
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(6, 10%);
+    grid-auto-flow: columns;
+  } */

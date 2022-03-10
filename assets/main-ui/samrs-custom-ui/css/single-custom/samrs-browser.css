@@ -1,0 +1,32 @@
+/* SAMRS BROWSER CUSTOM */
+body {
+  font-family: var(--samrs-roboto);
+}
+::selection{
+  background: #e42d3d;
+  color: #fefefe;
+  text-shadow: none;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--samrs-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #c14055;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+::-webkit-scrollbar:horizontal{
+  height: 8px;
+}
+[scroll*="smooth"]{
+  scroll-behavior: smooth;
+}
+/* /SAMRS BROWSER CUSTOM */

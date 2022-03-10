@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('single-custom/samrs-typography.css');
+body{
+  font-family: 'Microsoft Sans Serif', sans-serif;
+}
+div.paging{
+  page-break-after: always;
+  page-break-before: always;
+}
+.paging+.paging{
+  margin: 20px 0;
+}
+.page-size-70{
+  width: 90mm;
+  height: 24mm;
+  margin: 0mm 1mm 0mm 1mm;
+  /* margin:auto; */
+  display: block;
+}
+/* .title{
+  text-align:center;
+  font-size:10px!important;
+  font-weight:bold;
+  color: #000!important;
+  margin:0;
+}
+.title .text{
+    border-width: 0 0 2px 0;
+    border-style: ridge;
+    padding-bottom: 2px;
+}
+.qr-image{
+  display: block;
+  margin: 0!important;
+  width: 80px;
+  height: auto;
+} */
+/* .qr-asset-name{
+  font-size: 10px;
+}
+.qr-serial-number{
+  font-size: 10px;
+}
+.qr-location-name{
+  font-size: 10px;
+} */
+/* .qr-id-code{
+  font-size:10px;
+  font-weight: 500;
+  margin-left: -70px;
+  float: right;
+} */
+@media all {
+  .samrs-qr-template{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .samrs-qr-template .qr-images{
+    width: 80px;
+    height: auto;
+  }
+  .samrs-qr-template .qr-images img{
+    width: 90px;
+    height: auto;
+    margin: -10px -8px;
+  }
+  .qr-title{
+    margin: 7px 0 2px 0!important;
+    font-size: 11px;
+    text-align: left;
+    border-width: 0 0 2px 0;
+    border-style: ridge;
+  }
+  .qr-title span{
+    margin: 0 0 0 6px;
+  }
+  .qr-long-info{
+    width: 100%;
+    line-height: 1;
+    margin-left: 5px;
+  }
+  .qr-long-info p.tools-name{
+    font-size: 12px;
+    margin: 0!important;
+    word-break: break-all;
+  }
+  .qr-long-info p.brand-name{
+    font-size: 12px;
+    margin: 0!important;
+  }
+  .qr-long-info p.serial-number{
+    font-size: 12px;
+    margin: 0!important;
+  }
+  .qr-long-info p.serial-number span.title{
+    text-transform: uppercase;
+    margin-right: 2px;
+  }
+  .qr-long-info p.labels{
+    font-size: 12px;
+    margin: 0!important;
+  }
+  .qr-long-info p.locations{
+    font-size: 12px;
+    word-break: break-all;
+    margin: 0!important;
+  }
+  .qr-long-info p.qr-id{
+    font-size: 11px;
+    margin: 0 5px 0 0!important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+@media print {
+  @page {
+      size: 70mm 24mm landscape;
+      /* margin: 0 0.13in 0 -0.06in; */
+      margin: 0 0.06in 0 0;
+  }
+  .paging{
+    margin: 0;
+  }
+  .page-size-70{
+    width: 90mm;
+    height: 24mm;
+    margin: 4px 0 0 0;
+  }
+  .paging+.paging{
+    margin: 0;
+  }
+}

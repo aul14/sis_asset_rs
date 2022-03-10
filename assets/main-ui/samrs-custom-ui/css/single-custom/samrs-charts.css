@@ -1,0 +1,61 @@
+/* samrs-charts */
+.charts-wrapper{  /* charts card initialize */
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.charts-wrapper-lg{   /* charts card initialize */
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+[data-chart-size='A']{
+  width: 100%;
+  height: 200px;
+  margin: 0 auto!important;
+}
+[data-chart-size='B']{
+  width: 100%;
+  height: 400px;
+  margin: 0 auto!important;
+}
+[data-chart-size='C']{
+  width: 100%;
+  height: 600px;
+  margin: 0 auto!important;
+}
+[data-chart-size='D']{
+  width: 700px;
+  height: 200px;
+  margin: 0 auto!important;
+}
+[data-chart-size='E']{
+  width: 300px;
+  height: 400px;
+  /* margin: 0 auto!important; */
+}
+[data-chart-size='F']{
+  width: 100%;
+  height: 250px;
+  margin: 0 auto!important;
+}
+[data-chart-size='G']{
+  width: 100%;
+  height: 300px;
+  margin: 0 auto!important;
+}
+[data-chart-size='H']{
+  width: 100%;
+  height: 500px;
+  margin: 0 auto!important;
+}
+[data-chart-size='I']{
+  width: 100%;
+  height: 700px;
+  margin: 0 auto!important;
+}
+/* /samrs-charts */
